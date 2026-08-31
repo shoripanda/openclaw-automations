@@ -13,5 +13,8 @@ GitHub / Hacker News / Hugging Face を指定キーワードで定期監視し�
 ### 3. [ai-digest](./ai-digest) — 情報収集 → LLM要約 → 配信（Python単体）
 AIツールのリリースフィードや Hugging Face トレンドを定期収集し、**新着だけ**をLLMで要約してTelegram（＋任意でZennスクラップ）へ配信する、OpenClaw非依存の軽量bot。標準ライブラリのみ。
 
+### 4. [reposapo-3themes](./reposapo-3themes) — @reposapo 3テーマ定期収集 → 承認 → 自動投稿
+Claude Code / Codex / 無検閲(uncensored·abliterated)LLM の3テーマを毎日5:30・17:30に収集し、X(@reposapo)向け投稿文を生成。**既存の朝承認フロー**で人間が確認し、承認分だけ自動投稿する。無検閲LLMはHF trendingScore順＋likes≥30で選別。生成は無料枠fcc→Opusフォールバック。
+
 ## ライセンス
 MIT
